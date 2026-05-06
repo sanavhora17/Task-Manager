@@ -9,12 +9,7 @@ npm install
 ```
 
 Edit `.env` if needed (default values work for local):
-```
-MONGO_URI=mongodb://localhost:27017/taskmanager
-JWT_SECRET=taskflow_super_secret_key_change_in_production
-ADMIN_EMAIL=admin@taskflow.com
-ADMIN_PASSWORD=Admin@1234
-```
+
 
 ### 2. Create Admin Account (run ONCE)
 ```bash
@@ -36,13 +31,7 @@ npm start
 
 ---
 
-## Admin Login
-| Field | Value |
-|-------|-------|
-| Email | admin@taskflow.com |
-| Password | Admin@1234 |
 
-> ⚠️ Change these in `.env` before going live
 
 ---
 
