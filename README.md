@@ -8,8 +8,8 @@ cd backend
 npm install
 ```
 
-Edit `.env` if needed (default values work for local):
 
+```
 
 ### 2. Create Admin Account (run ONCE)
 ```bash
@@ -30,6 +30,8 @@ npm start
 ```
 
 ---
+
+
 
 
 

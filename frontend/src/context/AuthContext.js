@@ -5,7 +5,11 @@ const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
-const API = axios.create({ baseURL: '/api' });
+const API = axios.create({ 
+  baseURL: process.env.REACT_APP_API_URL 
+    ? `${process.env.REACT_APP_API_URL}/api` 
+    : '/api' 
+});
 
 API.interceptors.request.use(cfg => {
   const token = localStorage.getItem('token');
